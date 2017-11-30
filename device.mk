@@ -74,8 +74,8 @@ PRODUCT_PACKAGES += \
     libvehiclenetwork-native
 
 # Init
-PRODUCT_COPY_FILES += \
-    device/essential/mata/rootdir/root/init.class_main.sh:root/init.class_main.sh
+PRODUCT_PACKAGES += \
+    init.class_main.sh
 
 # IPv6 tethering
 PRODUCT_PACKAGES += \
