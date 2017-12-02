@@ -116,10 +116,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full
 
-# Sensors
-PRODUCT_PACKAGES += \
-    sensors.msm8998
-
 # Tethering
 PRODUCT_PROPERTY_OVERRIDES += \
     net.tethering.noprovisioning=true
