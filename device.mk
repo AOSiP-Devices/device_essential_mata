@@ -92,10 +92,6 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw
 
-# Permissions
-PRODUCT_PACKAGES += \
-    fs_config_files
-
 # Radio
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full
