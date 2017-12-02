@@ -100,10 +100,6 @@ PRODUCT_PACKAGES += \
     ebtables \
     ethertypes
 
-# Led packages
-PRODUCT_PACKAGES += \
-    lights.msm8998
-
 # NFC
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
