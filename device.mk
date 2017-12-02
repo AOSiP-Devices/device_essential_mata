@@ -71,7 +71,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
     com.nxp.nfc.nq \
-    nfc_nci.nqx.default \
     NQNfcNci \
     nqnfcee_access.xml \
     nqnfcse_access.xml \
