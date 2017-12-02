@@ -108,10 +108,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fs_config_files
 
-# Power
-PRODUCT_PACKAGES += \
-    power.msm8998
-
 # Radio
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full
