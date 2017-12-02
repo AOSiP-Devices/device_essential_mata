@@ -1,3 +1,6 @@
+# Audio
+etc/firmware/TFA9891.cnt
+
 # Camera
 -app/Score/Score.apk
 bin/fastboot
@@ -7,49 +10,130 @@ etc/cne/andsfCne.xml
 etc/cne/SwimConfig.xml
 etc/permissions/cneapiclient.xml
 etc/permissions/com.quicinc.cne.xml
-framework/cneapiclient.jar
-framework/com.quicinc.cne.jar
+-framework/cneapiclient.jar
+-framework/com.quicinc.cne.api-V1.0-java.jar
+-framework/com.quicinc.cne.jar
 -priv-app/CNEService/CNEService.apk
 
 # DPM
 bin/dpmd
 etc/dpm/dpm.conf
 etc/dpm/nsrm/NsrmConfiguration.xml
+etc/init/dpmd.rc
 etc/permissions/com.qti.dpmframework.xml
 etc/permissions/dpmapi.xml
-framework/com.qti.dpmframework.jar
-framework/dpmapi.jar
-framework/tcmclient.jar
+-framework/com.qti.dpmframework.jar
+-framework/dpmapi.jar
+-framework/tcmclient.jar
 -priv-app/dpmserviceapp/dpmserviceapp.apk
+lib/com.qualcomm.qti.dpm.api@1.0.so
+lib/libdpmctmgr.so
+lib/libdpmfdmgr.so
+lib/libdpmframework.so
+lib/libdpmnsrm.so
+lib/libdpmtcm.so
+lib64/com.qualcomm.qti.dpm.api@1.0.so
+lib64/libdpmctmgr.so
+lib64/libdpmfdmgr.so
+lib64/libdpmframework.so
+lib64/libdpmnsrm.so
+lib64/libdpmtcm.so
+
+# Essential
+etc/permissions/vendor-essential-hardware-sidecar.xml
+etc/permissions/privapp-permissions-mata.xml
+lib/vendor.essential.hardware.sidecar@1.0.so
+lib64/vendor.essential.hardware.sidecar@1.0.so
+
+# Fingerprint
+-framework/vendor.qti.hardware.fingerprint-V1.0-java.jar
 
 # GPS
 etc/permissions/com.qti.location.sdk.xml
 etc/permissions/com.qualcomm.location.xml
 etc/permissions/izat.xt.srv.xml
-framework/com.qti.location.sdk.jar
-framework/izat.xt.srv.jar
+-framework/com.qti.location.sdk.jar
+-framework/izat.xt.srv.jar
 -priv-app/com.qualcomm.location/com.qualcomm.location.apk
+lib/liblocationservice_jni.so
+lib/vendor.qti.gnss@1.0.so
+lib64/liblocationservice_jni.so
+lib64/vendor.qti.gnss@1.0.so
+
+# Hotword
+-priv-app/HotwordEnrollmentOKGoogleWCD9335/HotwordEnrollmentOKGoogleWCD9335.apk
+-priv-app/HotwordEnrollmentTGoogleWCD9335/HotwordEnrollmentTGoogleWCD9335.apk
+-priv-app/HotwordEnrollmentXGoogleWCD9335/HotwordEnrollmentXGoogleWCD9335.apk
+
+# IMS
+-app/ims/ims.apk
+lib/com.qualcomm.qti.imscmservice@1.0.so
+lib/lib-imscamera.so
+lib/lib-imsvideocodec.so
+lib/lib-imsvtextutils.so
+lib/lib-imsvtutils.so
+lib/libimscamera_jni.so
+lib/libimsmedia_jni.so
+lib/vendor.qti.imsrtpservice@1.0.so
+lib64/com.qualcomm.qti.imscmservice@1.0.so
+lib64/lib-imscamera.so
+lib64/lib-imsvideocodec.so
+lib64/lib-imsvtextutils.so
+lib64/lib-imsvtutils.so
+lib64/libimscamera_jni.so
+lib64/libimsmedia_jni.so
+lib64/vendor.qti.imsrtpservice@1.0.so
+
+# Perf
+lib/vendor.qti.hardware.iop@1.0.so
+lib/vendor.qti.hardware.perf@1.0.so
+lib64/vendor.qti.hardware.iop@1.0.so
+lib64/vendor.qti.hardware.perf@1.0.so
 
 # Postprocessing
 etc/permissions/com.qti.snapdragon.sdk.display.xml
-framework/com.qti.snapdragon.sdk.display.jar
+-framework/com.qti.snapdragon.sdk.display.jar
+lib/vendor.display.color@1.0.so
+lib/vendor.display.postproc@1.0.so
+lib/vendor.qti.hardware.vpp@1.1.so
+lib64/vendor.display.color@1.0.so
+lib64/vendor.display.postproc@1.0.so
+lib64/vendor.qti.hardware.vpp@1.1.so
 
 # QMI
 etc/permissions/qti_permissions.xml
+
+# QSEE
+lib/vendor.qti.hardware.qteeconnector@1.0.so
+lib64/vendor.qti.hardware.qteeconnector@1.0.so
 
 # Radio
 -app/datastatusnotification/datastatusnotification.apk
 -app/embms/embms.apk
 -app/QtiTelephonyService/QtiTelephonyService.apk
+-app/radioconfig/radioconfig.apk
 etc/permissions/embms.xml
 etc/permissions/qcrilhook.xml
+etc/permissions/radioconfig.xml
+etc/permissions/radioconfiginterface.xml
 etc/permissions/telephonyservice.xml
-framework/embmslibrary.jar
+etc/sysconfig/qti_whitelist.xml
+-framework/embmslibrary.jar
 -framework/qcrilhook.jar
-framework/qti-telephony-common.jar|b6c94f544cfcbd5706b1ca8bd14e490e78c6307a
-framework/QtiTelephonyServicelibrary.jar
+-framework/qti-telephony-common.jar
+-framework/QtiTelephonyServicelibrary.jar
+lib/libtsext_inf.so
+lib64/libtsext_inf.so
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 
 # Sensors
 lib/sensors.hal.tof.so
 lib64/sensors.hal.tof.so
+
+# Touchscreen
+lib/vendor.qti.hardware.improvetouch.blobmanager@1.0.so
+lib/vendor.qti.hardware.improvetouch.gesturemanager@1.0.so
+lib/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so
+lib64/vendor.qti.hardware.improvetouch.blobmanager@1.0.so
+lib64/vendor.qti.hardware.improvetouch.gesturemanager@1.0.so
+lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so
