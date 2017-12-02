@@ -53,8 +53,7 @@ PRODUCT_PACKAGES += \
     gralloc.msm8998 \
     hwcomposer.msm8998 \
     memtrack.msm8998 \
-    liboverlay \
-    libtinyxml
+    liboverlay
 
 # Fingerprint
 PRODUCT_PACKAGES += \
@@ -91,10 +90,6 @@ PRODUCT_PACKAGES += \
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:system/etc/permissions/android.hardware.fingerprint.xml
-
-# QMI
-PRODUCT_PACKAGES += \
-    libjson
 
 # OMX
 PRODUCT_PACKAGES += \
