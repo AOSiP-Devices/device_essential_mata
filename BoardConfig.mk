@@ -11,7 +11,6 @@ TARGET_2ND_ARCH_VARIANT := armv7-a-neon
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := kryo
-ARCH_ARM_HAVE_TLS_REGISTER := true
 
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOOTLOADER_BOARD_NAME := Mata
@@ -84,9 +83,6 @@ BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_QCOM := true
 QCOM_BT_USE_BTNV := true
 
-# Camera
-USE_CAMERA_STUB := true
-
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
@@ -103,14 +99,6 @@ TARGET_USES_ION := true
 VSYNC_EVENT_PHASE_OFFSET_NS := 2000000
 SF_VSYNC_EVENT_PHASE_OFFSET_NS := 6000000
 
-# GPS
-TARGET_NO_RPC := true
-USE_DEVICE_SPECIFIC_GPS := true
-BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := $(TARGET_BOARD_PLATFORM)
-
-# Hardware tunables
-BOARD_USES_CYANOGEN_HARDWARE := true
-
 # Kernel
 BOARD_KERNEL_CMDLINE := androidboot.hardware=mata user_debug=31 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 cma=32M@0-0xffffffff
 BOARD_KERNEL_BASE := 0x80000000
@@ -125,9 +113,6 @@ TARGET_KERNEL_HEADER_ARCH := arm64
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
-
-# LLVM
-TARGET_USE_SDCLANG := true
 
 # NFC
 BOARD_NFC_CHIPSET := pn548
@@ -145,9 +130,6 @@ TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_msm8998
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
-# PowerHAL
-TARGET_POWERHAL_VARIANT := qcom
-
 # RIL
 TARGET_RIL_VARIANT := caf
 
@@ -157,9 +139,6 @@ BOARD_ROOT_EXTRA_FOLDERS := bt_firmware dsp firmware persist
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += device/essential/mata/sepolicy
-
-# Sensors
-USE_SENSOR_MULTI_HAL += true
 
 # Timeservice
 BOARD_USES_QC_TIME_SERVICES := true
