@@ -73,13 +73,6 @@ PRODUCT_PACKAGES += \
     libgnsspps \
     libvehiclenetwork-native
 
-PRODUCT_COPY_FILES += \
-    device/essential/mata/configs/gps/flp.conf:system/vendor/etc/flp.conf \
-    device/essential/mata/configs/gps/izat.conf:system/vendor/etc/izat.conf \
-    device/essential/mata/configs/gps/lowi.conf:system/vendor/etc/lowi.conf \
-    device/essential/mata/configs/gps/sap.conf:system/vendor/etc/sap.conf \
-    device/essential/mata/configs/gps/xtwifi.conf:system/vendor/etc/xtwifi.conf
-
 # Init
 PRODUCT_COPY_FILES += \
     device/essential/mata/rootdir/bin/init.qti.qseecomd.sh:system/bin/init.qti.qseecomd.sh \
