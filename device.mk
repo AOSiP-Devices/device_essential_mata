@@ -22,8 +22,7 @@ TARGET_SCREEN_WIDTH := 1312
 
 # Camera
 PRODUCT_PACKAGES += \
-    libxml2 \
-    Snap
+    libxml2
 
 # Dalvik/HWUI
 PRODUCT_PROPERTY_OVERRIDES += \
