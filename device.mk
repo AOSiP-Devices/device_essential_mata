@@ -123,10 +123,6 @@ PRODUCT_PACKAGES += \
     nqnfcse_access.xml \
     Tag
 
-PRODUCT_COPY_FILES += \
-    device/essential/mata/configs/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
-    device/essential/mata/configs/libnfc-nxp.conf:system/etc/libnfc-nxp.conf
-
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth.xml:system/etc/permissions/android.hardware.bluetooth.xml \
