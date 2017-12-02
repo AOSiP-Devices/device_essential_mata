@@ -36,8 +36,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_STATIC_BOOT_CONTROL_HAL := \
     bootctrl.msm8998 \
-    librecovery_updater_msm8998 \
-    libsparse_static
+    libgptutils \
+    libz
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += device/essential/mata/overlay
