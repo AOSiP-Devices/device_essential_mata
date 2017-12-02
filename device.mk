@@ -100,10 +100,6 @@ PRODUCT_PACKAGES += \
     ebtables \
     ethertypes
 
-# IRSC
-PRODUCT_COPY_FILES += \
-    device/essential/mata/configs/sec_config:system/etc/sec_config
-
 # Led packages
 PRODUCT_PACKAGES += \
     lights.msm8998
