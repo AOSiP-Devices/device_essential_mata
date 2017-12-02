@@ -55,9 +55,6 @@ PRODUCT_PACKAGES += \
     liboverlay
 
 # Fingerprint
-PRODUCT_PACKAGES += \
-    fingerprintd
-
 PRODUCT_COPY_FILES += \
     device/essential/mata/keylayout/uinput-fpc.kl:system/usr/keylayout/uinput-fpc.kl
 
