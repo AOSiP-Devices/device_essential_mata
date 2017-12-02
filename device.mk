@@ -100,10 +100,6 @@ PRODUCT_PACKAGES += \
     ebtables \
     ethertypes
 
-# IRQ
-PRODUCT_COPY_FILES += \
-    device/essential/mata/configs/msm_irqbalance.conf:system/vendor/etc/msm_irqbalance.conf
-
 # IRSC
 PRODUCT_COPY_FILES += \
     device/essential/mata/configs/sec_config:system/etc/sec_config
