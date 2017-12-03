@@ -44,14 +44,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapminfree=512k \
     dalvik.vm.heapmaxfree=8m
 
-# Display
-PRODUCT_PACKAGES += \
-    copybit.msm8998 \
-    gralloc.msm8998 \
-    hwcomposer.msm8998 \
-    memtrack.msm8998 \
-    liboverlay
-
 # Fingerprint
 PRODUCT_COPY_FILES += \
     device/essential/mata/keylayout/uinput-fpc.kl:system/usr/keylayout/uinput-fpc.kl
