@@ -153,7 +153,6 @@ BOARD_NFC_CHIPSET := pn548
 TARGET_RIL_VARIANT := caf
 
 # SELinux
-include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += device/essential/mata/sepolicy
 
 # Timeservice
