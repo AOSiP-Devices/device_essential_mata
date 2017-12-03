@@ -10,6 +10,7 @@ PRODUCT_PACKAGES += \
     android.hardware.broadcastradio@1.1 \
     android.hardware.soundtrigger@2.0-impl \
     audio.a2dp.default \
+    audio.primary.msm8998 \
     audio.r_submix.default \
     audio.usb.default \
     libaudio-resampler \
