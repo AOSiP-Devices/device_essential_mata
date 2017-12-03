@@ -188,7 +188,8 @@ PRODUCT_PACKAGES += \
     libGLES_android
 
 # Update engine
-PRODUCT_PACKAGES += brillo_update_payload
+PRODUCT_PACKAGES += \
+    brillo_update_payload
 
 # USB
 PRODUCT_PACKAGES += \
