@@ -114,6 +114,7 @@ TARGET_FS_CONFIG_GEN := device/essential/mata/config.fs
 
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 BOARD_USES_RECOVERY_AS_BOOT := true
+TARGET_COPY_OUT_VENDOR := vendor
 TARGET_NO_RECOVERY := true
 
 # Kernel
@@ -147,6 +148,10 @@ BOARD_SEPOLICY_DIRS += device/essential/mata/sepolicy
 
 # Timeservice
 BOARD_USES_QC_TIME_SERVICES := true
+
+# Treble
+PRODUCT_ENFORCE_RRO_TARGETS := frameworks-res
+PRODUCT_FULL_TREBLE_OVERRIDE := true
 
 # Wifi
 BOARD_HAS_QCOM_WLAN := true
