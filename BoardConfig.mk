@@ -154,6 +154,8 @@ TARGET_RIL_VARIANT := caf
 
 # SELinux
 BOARD_SEPOLICY_DIRS += device/essential/mata/sepolicy
+BOARD_PLAT_PUBLIC_SEPOLICY_DIR += device/essential/mata/sepolicy-platform/public
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += device/essential/mata/sepolicy-platform/private
 
 # Timeservice
 BOARD_USES_QC_TIME_SERVICES := true
