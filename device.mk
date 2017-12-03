@@ -50,7 +50,8 @@ PRODUCT_COPY_FILES += \
 
 # Init
 PRODUCT_PACKAGES += \
-    init.class_main.sh
+    init.class_main.sh \
+    init.recovery.mata.rc
 
 # IPv6 tethering
 PRODUCT_PACKAGES += \
