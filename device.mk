@@ -98,7 +98,8 @@ PRODUCT_PACKAGES += \
 # Init
 PRODUCT_PACKAGES += \
     init.class_main.sh \
-    init.recovery.mata.rc
+    init.recovery.mata.rc \
+    modprobe.rc
 
 # IPv6 tethering
 PRODUCT_PACKAGES += \

@@ -133,6 +133,9 @@ TARGET_KERNEL_CONFIG := lineageos_mata_defconfig
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 
+# Kernel modules
+NEED_KERNEL_MODULE_ROOT := true
+
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 
