@@ -125,12 +125,6 @@ PRODUCT_PACKAGES += \
     android.hardware.nfc@1.0-impl \
     android.hardware.nfc@1.0-service \
     com.android.nfc_extras \
-    com.nxp.nfc.nq \
-    libnqnfc_nci_jni \
-    nfc_nci.nqx.default \
-    nqnfcee_access.xml \
-    nqnfcse_access.xml \
-    NQNfcNci \
     Tag
 
 # Permissions
