@@ -4,6 +4,7 @@ etc/firmware/TFA9891.cnt
 # Camera
 -app/Score/Score.apk
 bin/fastboot
+-priv-app/Klik/Klik.apk
 
 # CNE
 etc/cne/andsfCne.xml
