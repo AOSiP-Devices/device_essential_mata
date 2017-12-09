@@ -103,6 +103,14 @@ VSYNC_EVENT_PHASE_OFFSET_NS := 2000000
 SF_VSYNC_EVENT_PHASE_OFFSET_NS := 6000000
 
 # Filesystem
+AB_OTA_PARTITIONS += boot system
+AB_OTA_POSTINSTALL_CONFIG += \
+    RUN_POSTINSTALL_system=true \
+    POSTINSTALL_PATH_system=system/bin/otapreopt_script \
+    FILESYSTEM_TYPE_system=ext4 \
+    POSTINSTALL_OPTIONAL_system=true
+AB_OTA_UPDATER := true
+
 BOARD_BOOTIMAGE_PARTITION_SIZE := 536870912 # 500MB
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 4294967296 # 4GB
 BOARD_FLASH_BLOCK_SIZE := 0x40000
@@ -155,6 +163,13 @@ BOARD_USES_QC_TIME_SERVICES := true
 # Treble
 PRODUCT_ENFORCE_RRO_TARGETS := frameworks-res
 PRODUCT_FULL_TREBLE_OVERRIDE := true
+
+# TWRP
+ifeq ($(WITH_TWRP),true)
+$(call inherit-product, device/essential/mata/twrp/twrp.mk)
+else
+TARGET_RECOVERY_FSTAB := device/essential/mata/rootdir/etc/fstab.mata
+endif
 
 # Wifi
 BOARD_HAS_QCOM_WLAN := true
