@@ -1,3 +1,4 @@
+BOARD_HAS_LARGE_FILESYSTEM := true
 RECOVERY_SDCARD_ON_DATA := true
 TARGET_RECOVERY_FSTAB := device/essential/mata/twrp/twrp.fstab
 TARGET_RECOVERY_QCOM_RTC_FIX := true
