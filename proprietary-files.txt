@@ -4,7 +4,7 @@ etc/firmware/TFA9891.cnt
 # Camera
 -app/Score/Score.apk
 bin/fastboot
--priv-app/Klik/Klik.apk
+-priv-app/Klik/Klik.apk:priv-app/Klik/Klik.apk:PRESIGNED
 
 # CNE
 etc/cne/andsfCne.xml
@@ -62,9 +62,9 @@ lib64/liblocationservice_jni.so
 lib64/vendor.qti.gnss@1.0.so
 
 # Hotword
--priv-app/HotwordEnrollmentOKGoogleWCD9335/HotwordEnrollmentOKGoogleWCD9335.apk
--priv-app/HotwordEnrollmentTGoogleWCD9335/HotwordEnrollmentTGoogleWCD9335.apk
--priv-app/HotwordEnrollmentXGoogleWCD9335/HotwordEnrollmentXGoogleWCD9335.apk
+-priv-app/HotwordEnrollmentOKGoogleWCD9335/HotwordEnrollmentOKGoogleWCD9335.apk:priv-app/HotwordEnrollmentOKGoogleWCD9335/HotwordEnrollmentOKGoogleWCD9335.apk:PRESIGNED
+-priv-app/HotwordEnrollmentTGoogleWCD9335/HotwordEnrollmentTGoogleWCD9335.apk:priv-app/HotwordEnrollmentTGoogleWCD9335/HotwordEnrollmentTGoogleWCD9335.apk:PRESIGNED
+-priv-app/HotwordEnrollmentXGoogleWCD9335/HotwordEnrollmentXGoogleWCD9335.apk:priv-app/HotwordEnrollmentXGoogleWCD9335/HotwordEnrollmentXGoogleWCD9335.apk:PRESIGNED
 
 # IMS
 -app/ims/ims.apk
