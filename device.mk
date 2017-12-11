@@ -1,3 +1,9 @@
+#Gapps
+GAPPS_VARIANT := nano
+GAPPS_FORCE_PACKAGE_OVERRIDES := true
+PRODUCT_PACKAGES += Chrome
+$(call inherit-product-if-exists, vendor/opengapps/build/opengapps-packages.mk)
+
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/essential/mata/mata-vendor.mk)
 
@@ -149,6 +155,11 @@ PRODUCT_PACKAGES += \
 # Media
 PRODUCT_PACKAGES += \
     android.hardware.media.omx@1.0-service
+
+# Net
+PRODUCT_PACKAGES += \
+    android.system.net.netd@1.0 \
+    netutils-wrapper-1.0
 
 # NFC
 PRODUCT_PACKAGES += \
