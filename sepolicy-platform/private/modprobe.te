@@ -1,0 +1,1 @@
+allow modprobe rootfs:system module_load;
