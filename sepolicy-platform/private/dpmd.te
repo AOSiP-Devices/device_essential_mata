@@ -1,0 +1,4 @@
+type dpmd, domain, mlstrustedsubject;
+type dpmd_exec, exec_type, file_type;
+
+typeattribute dpmd coredomain;
