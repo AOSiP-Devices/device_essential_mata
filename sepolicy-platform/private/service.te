@@ -1,3 +1,5 @@
 type cne_service,                 service_manager_type;
+type dpmservice,                  service_manager_type;
 type imscm_service,               service_manager_type;
+type izat_service,                service_manager_type;
 type fingerprint_nav_service,     service_manager_type;

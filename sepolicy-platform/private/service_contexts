@@ -1,1 +1,4 @@
+cneservice                                                        u:object_r:cne_service:s0
+dpmservice                                                        u:object_r:dpmservice:s0
 com.fingerprints.extension.navigation.IFingerprintNavigation      u:object_r:fingerprint_nav_service:s0
+com.qualcomm.location.izat.IzatService                            u:object_r:izat_service:s0
