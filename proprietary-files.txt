@@ -7,6 +7,9 @@ bin/fastboot
 -priv-app/Klik/Klik.apk:priv-app/Klik/Klik.apk:PRESIGNED
 
 # CNE
+etc/cne/Nexus/ATT/ATT_profiles.xml
+etc/cne/Nexus/ROW/ROW_profiles.xml
+etc/cne/Nexus/VZW/VZW_profiles.xml
 etc/cne/andsfCne.xml
 etc/cne/SwimConfig.xml
 etc/permissions/cneapiclient.xml
@@ -144,6 +147,10 @@ lib64/libtsext_inf.so
 lib/sensors.hal.tof.so
 lib64/sensors.hal.tof.so
 
+# Sprint
+-priv-app/SprintDM/SprintDM.apk
+-priv-app/SprintHM/SprintHM.apk
+
 # Touchscreen
 lib/vendor.qti.hardware.improvetouch.blobmanager@1.0.so
 lib/vendor.qti.hardware.improvetouch.gesturemanager@1.0.so
@@ -151,3 +158,11 @@ lib/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so
 lib64/vendor.qti.hardware.improvetouch.blobmanager@1.0.so
 lib64/vendor.qti.hardware.improvetouch.gesturemanager@1.0.so
 lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so
+
+# VZW
+-app/VZWAPNLib/VZWAPNLib.apk:app/VZWAPNLib/VZWAPNLib.apk:PRESIGNED
+etc/permissions/com.verizon.apn.xml
+etc/permissions/com.verizon.embms.xml
+etc/permissions/com.verizon.provider.xml
+-framework/VerizonUnifiedSettings.jar:PRESIGNED
+-priv-app/VzwOmaTrigger/VzwOmaTrigger.apk:priv-app/VzwOmaTrigger/VzwOmaTrigger.apk:PRESIGNED
