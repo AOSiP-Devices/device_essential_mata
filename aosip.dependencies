@@ -8,26 +8,9 @@
     "target_path": "vendor/essential"
   },
   {
-    "repository": "opengapps/aosp_build",
-    "target_path": "vendor/opengapps/build",
-    "branch": "master"
-  },
-  {
-    "repository": "opengapps/all",
-    "target_path": "vendor/opengapps/sources/all",
-    "branch": "master",
-    "clone-depth": "1"
-  },
-  {
-    "repository": "opengapps/arm",
-    "target_path": "vendor/opengapps/sources/arm",
-    "branch": "master",
-    "clone-depth": "1"
-  },
-  {
-    "repository": "opengapps/arm64",
-    "target_path": "vendor/opengapps/sources/arm64",
-    "branch": "master",
+    "repository": "xlxfoxxlx/kronicgapps",
+    "target_path": "vendor/kronicgapps",
+    "branch": "oreo-mr1",
     "clone-depth": "1"
   }
 ]
