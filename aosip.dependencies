@@ -8,9 +8,9 @@
     "target_path": "vendor/essential"
   },
   {
-    "repository": "xlxfoxxlx/kronicgapps",
-    "target_path": "vendor/kronicgapps",
-    "branch": "oreo-mr1",
+    "repository": "MindTheGapps/vendor_gapps",
+    "target_path": "vendor/gapps",
+    "branch": "master",
     "clone-depth": "1"
   }
 ]
