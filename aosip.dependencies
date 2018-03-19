@@ -9,7 +9,7 @@
   },
   {
     "repository": "xlxfoxxlx/kronicgapps",
-    "target_path": "vendor/kronicgapps"
+    "target_path": "vendor/kronicgapps",
     "branch": "oreo-mr1"
   }
 ]
