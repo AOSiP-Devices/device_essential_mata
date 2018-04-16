@@ -8,8 +8,8 @@
     "target_path": "vendor/essential"
   },
   {
-    "repository": "xlxfoxxlx/kronicgapps",
+    "repository": "platform_vendor_gapps",
     "target_path": "vendor/kronicgapps",
-    "branch": "oreo-mr1"
+    "remote": "aosip"
   }
 ]
