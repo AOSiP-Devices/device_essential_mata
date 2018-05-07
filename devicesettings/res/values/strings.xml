@@ -27,4 +27,7 @@
 
     <string name="touchscreen_smoothness_title">Smoothness</string>
     <string name="touchscreen_smoothness_summary">Smoothness level:</string>
+
+	<string name="notch_offset_title">Offset Notch in Fullscreen Apps</string>
+	<string name="notch_offset_summary">Offsets the window layout of fullscreen apps to avoid notch cutoffs</string>
 </resources>

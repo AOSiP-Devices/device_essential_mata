@@ -31,4 +31,10 @@
             android:defaultValue="@integer/smoothness_default"
             android:max="@integer/smoothness_max" />
     </PreferenceCategory>
+
+    <org.lineageos.settings.device.widget.SystemSettingSwitchPreference
+        android:key="use_letterbox_when_fullscreen"
+        android:defaultValue="true"
+        android:title="@string/notch_offset_title"
+        android:summary="@string/notch_offset_summary" />
 </PreferenceScreen>

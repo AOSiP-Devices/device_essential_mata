@@ -179,6 +179,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     device/essential/mata/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-fpc.kl
 
+# Essential Settings
+PRODUCT_PACKAGES += \
+    EssentialSettings
+
 # GApps
 $(call inherit-product-if-exists, vendor/kronicgapps/kronic-gapps.mk)
 
