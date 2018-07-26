@@ -84,8 +84,8 @@ PRODUCT_PACKAGES += \
     otapreopt_script
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 2560
-TARGET_SCREEN_WIDTH := 1312
+PRODUCT_COPY_FILES += \
+    overlay/bootanimation/bootanimation.zip:system/media/bootanimation.zip
 
 # Boot control
 PRODUCT_PACKAGES += \
