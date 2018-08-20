@@ -114,7 +114,6 @@ Return<void> Power::powerHint(PowerHint_1_0 hint, int32_t data) {
             break;
 
     }
-
     return Void();
 }
 
