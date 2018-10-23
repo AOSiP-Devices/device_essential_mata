@@ -136,7 +136,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.default_network=10 \
     telephony.lteOnCdmaDevice=1
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 43eb3bc... mata: update mixer paths
 # Sensors
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.qti.sensors.dev_ori=false \
