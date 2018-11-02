@@ -1,7 +1,8 @@
 [
   {
-    "repository": "kernel_essential_msm8998",
-    "target_path": "kernel/essential/msm8998"
+    "repository": "0ctobot/neutrino_kernel_essential_msm8998",
+    "target_path": "kernel/essential/msm8998",
+    "branch": "lineage-15.1/neutrino-msm-mata-4.4"
   },
   {
     "repository": "vendor_essential",
