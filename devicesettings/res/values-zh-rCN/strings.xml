@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="touchscreen_settings_title">触摸屏设置</string>
+    <string name="touchscreen_settings_summary">触摸屏附加设置</string>
+
+    <string name="touchscreen_grip_rej_title">边缘防误触</string>
+    <string name="touchscreen_grip_rej_summary">检测并不响应在边缘的触摸</string>
+
+    <string name="touchscreen_smoothness_title">滑动顺度</string>
+    <string name="touchscreen_smoothness_summary">滑动顺度级别:</string>
+</resources>
