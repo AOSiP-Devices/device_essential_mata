@@ -273,6 +273,9 @@ on post-fs-data
     # Create IOP  deamon related dirs
     mkdir /data/vendor/iop 0770 root system
 
+    # Create /data/vendor/time folder for time-services
+    mkdir /data/vendor/time/ 0700 system system
+
     # Mark the copy complete flag to not completed
     write /data/vendor/radio/copy_complete 0
     chown radio radio /data/vendor/radio/copy_complete
@@ -385,6 +388,8 @@ on boot
 
     # Create NETMGR daemon socket area
     mkdir /dev/socket/netmgr 0750 radio radio
+
+    setprop wifi.interface wlan0
 
     # Define TCP buffer sizes for various networks
     # ReadMin, ReadInitial, ReadMax, WriteMin, WriteInitial, WriteMax,

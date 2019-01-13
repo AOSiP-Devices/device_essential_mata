@@ -37,6 +37,7 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno540
 TARGET_HAS_NO_SELECT_BUTTON := true
 
 TARGET_USES_64_BIT_BINDER := true
+TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
 
 # Audio
 BOARD_SUPPORTS_SOUND_TRIGGER_HAL := true
@@ -105,6 +106,16 @@ USE_CAMERA_STUB := true
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
+# Dexpreopt
+ifeq ($(HOST_OS),linux)
+  ifneq ($(TARGET_BUILD_VARIANT),eng)
+    ifeq ($(WITH_DEXPREOPT),)
+      WITH_DEXPREOPT := true
+      WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := true
+    endif
+  endif
+endif
+
 # Display
 MAX_EGL_CACHE_KEY_SIZE := 12*1024
 MAX_EGL_CACHE_SIZE := 2048*1024
@@ -148,6 +159,9 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_SOURCE := kernel/essential/msm8998
 TARGET_KERNEL_CONFIG := illusion_mata_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
+TARGET_KERNEL_CLANG_VERSION := 8.0.5
+export CROSS_COMPILE_ARM32 = prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
@@ -169,6 +183,8 @@ TARGET_NO_RECOVERY := true
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 TARGET_USES_MKE2FS := true
+
+BOARD_SUPPRESS_SECURE_ERASE := true
 
 # Recovery
 TARGET_RECOVERY_UI_MARGIN_WIDTH := 64
@@ -208,6 +224,7 @@ BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
 WIFI_DRIVER_FW_PATH_STA := "sta"
 WIFI_DRIVER_FW_PATH_AP  := "ap"
 WIFI_DRIVER_FW_PATH_P2P := "p2p"
+WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WIFI_DRIVER_OPERSTATE_PATH := "/sys/class/net/wlan0/operstate"
 WIFI_DRIVER_STATE_CTRL_PARAM := "/sys/kernel/boot_wlan/boot_wlan"
 WIFI_DRIVER_STATE_OFF := 0
