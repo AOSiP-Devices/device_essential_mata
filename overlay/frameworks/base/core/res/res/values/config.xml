@@ -401,18 +401,12 @@
     <!-- Enable 802.11ac for Wifi hotspot (SAP) -->
     <bool translatable="false" name="config_wifi_softap_ieee80211ac_supported">true</bool>
 
-<<<<<<< HEAD
-=======
     <!-- Whether or not swipe up gesture's opt-in setting is available on this device -->
     <bool name="config_swipe_up_gesture_setting_available">true</bool>
-
-    <!-- Smart Pixels -->
-    <bool name="config_enableSmartPixels">false</bool>
 
     <!-- Flag specifying whether VT should be available for carrier: independent of
          carrier provisioning. If false: hard disabled. If true: then depends on carrier
          provisioning, availability etc -->
     <bool name="config_carrier_vt_available">true</bool>
 
->>>>>>> 9751b543... mata: Add VOLTE overlay and more props
 </resources>
