@@ -885,9 +885,3 @@ service wpa_supplicant /vendor/bin/hw/wpa_supplicant \
     disabled
     oneshot
     writepid /dev/cpuset/system-background/tasks
-
-# IFAA
-service ifaadaemon /system/bin/ifaadaemon
-    class late_start
-    user system
-    group system
