@@ -7,5 +7,3 @@ allow system_app update_engine:binder { call transfer };
 get_prop(system_app, fastboot_prop)
 set_prop(system_app, vendor_hbtp_prop)
 allow system_server sysfs_memory:file { open read };
-
-binder_call(system_app, ifaadaemon)

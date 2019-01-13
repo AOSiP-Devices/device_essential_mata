@@ -1,3 +1,2 @@
 type fingerprint_extension_service, service_manager_type;
 type sidecar_service, service_manager_type;
-type ifaadaemon_service, service_manager_type;
