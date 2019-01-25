@@ -721,7 +721,3 @@
     -->
     <ExportVideoProfile name="m4v" profile= "1" level="128"/>
 </MediaSettings>
-<<<<<<< HEAD
-=======
-
->>>>>>> ddd6d70... mata: ipacm: Duplicate sys/socket.h header locally
