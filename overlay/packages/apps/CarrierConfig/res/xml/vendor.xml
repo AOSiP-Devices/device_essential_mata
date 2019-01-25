@@ -24,4 +24,7 @@
             <item value="3,11,9,10,15" />
         </string-array>
     </carrier_config>
+    <carrier_config mcc="460" mnc="00,01,02,03,05,06,07">
+        <boolean name="carrier_volte_available_bool" value="true" />
+    </carrier_config>
 </carrier_config_list>
