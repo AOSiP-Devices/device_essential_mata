@@ -428,3 +428,6 @@ PRODUCT_PACKAGES += \
     libwifi-hal-qcom \
     wpa_supplicant \
     wpa_supplicant.conf
+
+# GApps
+$(call inherit-product-if-exists, vendor/gapps/inline.mk)
